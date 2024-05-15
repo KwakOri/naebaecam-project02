@@ -3,7 +3,7 @@ import { ToDo } from "./ToDo";
 
 const ToDoList = ({ setToDos, toDos, isDone }) => {
   return (
-    <ul className="w-full flex justify-start items-center flex-1 overflow-x-scroll">
+    <ul className="flex items-center justify-start flex-1 w-full overflow-x-scroll">
       {toDos
         .filter((toDo) => {
           return toDo.isDone === isDone;

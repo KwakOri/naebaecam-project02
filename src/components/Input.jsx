@@ -3,9 +3,9 @@ import { PropTypes } from "prop-types";
 const Input = ({ onChange, value, placeholder, inputTitle }) => {
   return (
     <>
-      <label className="font-semibold text-xl">{inputTitle}</label>
+      <label className="text-xl font-semibold">{inputTitle}</label>
       <input
-        className="mb-4 mt-1"
+        className="mt-1 mb-4"
         type="text"
         onChange={(e) => {
           onChange(e.target.value);

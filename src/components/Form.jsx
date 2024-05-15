@@ -1,7 +1,7 @@
 import { PropTypes } from "prop-types";
 import { useState } from "react";
+import { makeToDo } from "../util/function";
 import { Input } from "./Input";
-import { makeToDo } from "./function";
 
 const Form = ({ setToDos, toDos }) => {
   const [toDoTitle, setToDoTitle] = useState("");
@@ -17,7 +17,7 @@ const Form = ({ setToDos, toDos }) => {
   };
   return (
     <form
-      className=" flex flex-col justify-center items-center h-1/3 w-56"
+      className="flex flex-col items-center justify-center w-56  h-1/3"
       onSubmit={(event) => {
         onSubmit(event);
       }}

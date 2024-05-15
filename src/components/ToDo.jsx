@@ -2,8 +2,8 @@ import { PropTypes } from "prop-types";
 
 const ToDo = ({ id, title, body, isDone, setToDos }) => {
   return (
-    <div className="h-32 w-48 p-2 mx-4 bg-white rounded-2xl border-2 ">
-      <div className="flex justify-between text-xs border-black border-b-2 pb-2">
+    <div className="w-48 h-32 p-2 mx-4 bg-white border-2 rounded-2xl ">
+      <div className="flex justify-between pb-2 text-xs border-b-2 border-black">
         <p className={"flex justify-center items-center text-lg font-black"}>
           {isDone ? "완료" : "진행중"}
         </p>
